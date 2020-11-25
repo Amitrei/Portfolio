@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Nunito:wght@400;700&family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Amit's Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-menu-container">
+        <a href="#"><img src="assets/Logo.svg" alt="Logo" /></a>
+        <ul>
+          <li><a href="#my-projects">PROJECTS</a></li>
+          <li><a href="#my-projects">SKILLS</a></li>
+          <li><a href="#about-contact-section">ABOUT</a></li>
+        </ul>
+      </div>
+
+      <a class="contact-btn" href="#about-contact-section">Contact</a>
+      <div class="burger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="left-side-container">
+        <div class="main-headline-container">
+          <h1>Looking for a Fullstack developer?</h1>
+          <p>
+            Hi I'm Amit a Fullstack developer and I'm ready to make <span>ideas</span> into
+            <span>reality</span>
+          </p>
+
+          <div class="ctas-container">
+            <img src="/assets/github-icon.svg" alt="github-link" />
+            <img src="/assets/linkedin-icon.svg" alt="linkedin-link" />
+            <a class="my-projects-btn" href="#"> my projects</a>
+          </div>
+        </div>
+      </div>
+      <div class="right-side-container">
+        <img src="assets/man.png" />
+      </div>
+    </main>
+
+    <section id="my-projects" class="projects-section">
+      <!-- bubbles start -->
+      <div class="bubbles b1"></div>
+      <div class="bubbles b2"></div>
+      <div class="bubbles b3"></div>
+      <div class="bubbles b4"></div>
+      <div class="bubbles b5"></div>
+
+      <h1>Projects</h1>
+      <div class="projects-container">
+        <div class="project-card couponim-card">
+          <div class="project-content-container">
+            <h2>COUPONIM</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit
+              expedita aliquam nobis blanditiis quibusdam.
+            </p>
+            <img class="github-card-img" src="/assets/github-white-icon.svg" />
+          </div>
+        </div>
+        <div class="project-card portfolio-card">
+          <div class="project-content-container">
+            <h2>PORTFOLIO</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit
+              expedita aliquam nobis blanditiis quibusdam.
+            </p>
+            <img class="github-card-img" src="/assets/github-white-icon.svg" />
+          </div>
+        </div>
+        <div class="project-card prittier-card">
+          <div class="project-content-container">
+            <h2>PRITTIER</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit
+              expedita aliquam nobis blanditiis quibusdam.
+            </p>
+            <img class="github-card-img" src="/assets/github-white-icon.svg" />
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="skills-container">
+        <h2>Skills</h2>
+        <div class="skills-icons-container">
+          <img src="/assets/skills-icons/java.svg" alt="java" />
+          <img src="/assets/skills-icons/spring.svg" alt="spring" />
+          <img src="/assets/skills-icons/mysql.svg" alt="mysql" />
+          <img src="/assets/skills-icons/html.svg" alt="html" />
+          <img src="/assets/skills-icons/javascript.svg" alt="javascript" />
+          <img src="/assets/skills-icons/angular.svg" alt="angular" />
+          <img src="/assets/skills-icons/css.svg" alt="css" />
+          <img src="/assets/skills-icons/illustrator.svg" alt="illustrator" />
+          <img src="/assets/skills-icons/xd.svg" alt="adobe xd" />
+          <img src="/assets/skills-icons/after-effects.svg" alt="after effects" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-contact-section" id="about-contact-section">
+      <div class="left-side-about-container">
+        <div class="about-container">
+          <a class="cv-btn" href="#">My CV</a>
+          <h1>About</h1>
+          <p>
+            Hi I'm Amit, nice to meet you! Im 25 years old and I live in Herzelia Israel. As a young
+            kid I always had the passion for software developing and design. After the military
+            service I started to learn deeply and more officiant about software development and now
+            I'm ready and confident to take a step into the industry.
+          </p>
+          <img src="/assets/about-image.png" alt="about-image" />
+        </div>
+      </div>
+      <div class="right-side-contact-container">
+        <div class="contact-container">
+          <h1>Contact Me</h1>
+          <div class="contact-form">
+            <div>
+              <label for="form-name">Full Name</label>
+              <input type="text" id="form-name" class="form-name" />
+            </div>
+
+            <div>
+              <label for="form-subject">Email</label>
+              <input type="text" id="form-subject" class="form-subject" />
+            </div>
+
+            <div class="message-form-container">
+              <label for="form-content">Message</label>
+              <textarea id="form-content" class="form-content"></textarea>
+              <a href="#">
+                <div class="submit-form-btn">
+                  <img src="/assets/submit-form-arrow.svg" alt="submit button" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

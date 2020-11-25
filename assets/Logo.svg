@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="64" viewBox="0 0 60 64">
+  <g id="Logo" transform="translate(0 0)">
+    <g id="Logo-2" data-name="Logo" transform="translate(6.489 6.052)">
+      <g id="Layer_1" data-name="Layer 1">
+        <g id="Group_1" data-name="Group 1">
+          <path id="Path_1" data-name="Path 1" d="M39.866,31.105,31.8,34.247l4.3,12.446h9.357ZM0,46.685H12.26l2.016-5.548ZM28.748,0H19.5L5.259,32.466l-.047.109L18.3,27.586l5.832-13.562L27.238,21.8l8.94-3.331Z" fill="#063441"/>
+        </g>
+      </g>
+    </g>
+    <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(0 0)" fill="none" stroke="#063441" stroke-width="3">
+      <rect width="60" height="64" rx="5" stroke="none"/>
+      <rect x="1.5" y="1.5" width="57" height="61" rx="3.5" fill="none"/>
+    </g>
+  </g>
+</svg>
