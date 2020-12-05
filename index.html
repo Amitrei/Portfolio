@@ -18,7 +18,7 @@
         <a href="#"><img src="assets/Logo.svg" alt="Logo" /></a>
         <ul>
           <li><a href="#my-projects">PROJECTS</a></li>
-          <li><a href="#my-projects">SKILLS</a></li>
+          <li><a href="#skills">SKILLS</a></li>
           <li><a href="#about-contact-section">ABOUT</a></li>
         </ul>
       </div>
@@ -41,15 +41,21 @@
           </p>
 
           <div class="ctas-container">
-            <img src="/assets/github-icon.svg" alt="github-link" />
-            <img src="/assets/linkedin-icon.svg" alt="linkedin-link" />
-            <a class="my-projects-btn" href="#"> my projects</a>
+            <a href="https://github.com/Amitrei"
+              ><img src="/assets/github-icon.svg" alt="github-link"
+            /></a>
+            <a href="https://www.linkedin.com/in/amit-reinich-bbb98b19b/"
+              ><img src="/assets/linkedin-icon.svg" alt="linkedin-link"
+            /></a>
+            <a class="my-projects-btn" href="#my-projects"> my projects</a>
           </div>
         </div>
       </div>
       <div class="right-side-container">
-        <img src="assets/man.png" />
+        <img class="main-img" src="assets/man.png" />
       </div>
+      <div class="menu-spacer"></div>
+
     </main>
 
     <section id="my-projects" class="projects-section">
@@ -60,16 +66,28 @@
       <div class="bubbles b4"></div>
       <div class="bubbles b5"></div>
 
-      <h1>Projects</h1>
+      <h1 class="projects-h1">Projects</h1>
       <div class="projects-container">
         <div class="project-card couponim-card">
+          <div class="couponim-cover project-cover">
+            <div>
+              <h1>COUPONIM</h1>
+              <span>Coupons managment platfrom</span>
+            </div>
+          </div>
           <div class="project-content-container">
             <h2>COUPONIM</h2>
+
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit
-              expedita aliquam nobis blanditiis quibusdam.
+              Publish,manage,purchase,sell and many more options on the platform. Companies will
+              increase their exposure and the customers will enjoy the specials discounts.
             </p>
-            <img class="github-card-img" src="/assets/github-white-icon.svg" />
+
+            <span class="tech-container">JAVA | SPRING | ANGULAR</span>
+            <div class="btns-card-container">
+              <img class="github-card-img" src="/assets/github-white-icon.svg" />
+              <img class="github-card-img" src="/assets/web-link.svg" />
+            </div>
           </div>
         </div>
         <div class="project-card portfolio-card">
@@ -79,7 +97,10 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit
               expedita aliquam nobis blanditiis quibusdam.
             </p>
-            <img class="github-card-img" src="/assets/github-white-icon.svg" />
+            <div class="btns-card-container">
+              <img class="github-card-img" src="/assets/github-white-icon.svg" />
+              <img class="github-card-img" src="/assets/github-white-icon.svg" />
+            </div>
           </div>
         </div>
         <div class="project-card prittier-card">
@@ -96,16 +117,20 @@
       <div id="skills" class="skills-container">
         <h2>Skills</h2>
         <div class="skills-icons-container">
-          <img src="/assets/skills-icons/java.svg" alt="java" />
-          <img src="/assets/skills-icons/spring.svg" alt="spring" />
-          <img src="/assets/skills-icons/mysql.svg" alt="mysql" />
-          <img src="/assets/skills-icons/html.svg" alt="html" />
-          <img src="/assets/skills-icons/javascript.svg" alt="javascript" />
-          <img src="/assets/skills-icons/angular.svg" alt="angular" />
-          <img src="/assets/skills-icons/css.svg" alt="css" />
-          <img src="/assets/skills-icons/illustrator.svg" alt="illustrator" />
-          <img src="/assets/skills-icons/xd.svg" alt="adobe xd" />
-          <img src="/assets/skills-icons/after-effects.svg" alt="after effects" />
+          <img class="skills-icon" src="/assets/skills-icons/java.svg" alt="java" />
+          <img class="skills-icon" src="/assets/skills-icons/spring.svg" alt="spring" />
+          <img class="skills-icon" src="/assets/skills-icons/mysql.svg" alt="mysql" />
+          <img class="skills-icon" src="/assets/skills-icons/html.svg" alt="html" />
+          <img class="skills-icon" src="/assets/skills-icons/javascript.svg" alt="javascript" />
+          <img class="skills-icon" src="/assets/skills-icons/angular.svg" alt="angular" />
+          <img class="skills-icon" src="/assets/skills-icons/css.svg" alt="css" />
+          <img class="skills-icon" src="/assets/skills-icons/illustrator.svg" alt="illustrator" />
+          <img class="skills-icon" src="/assets/skills-icons/xd.svg" alt="adobe xd" />
+          <img
+            class="skills-icon"
+            src="/assets/skills-icons/after-effects.svg"
+            alt="after effects"
+          />
         </div>
       </div>
     </section>
@@ -113,15 +138,20 @@
     <section class="about-contact-section" id="about-contact-section">
       <div class="left-side-about-container">
         <div class="about-container">
-          <a class="cv-btn" href="#">My CV</a>
-          <h1>About</h1>
+          <h1>A little bit about me</h1>
+          <div class="about-content-img">
           <p>
             Hi I'm Amit, nice to meet you! Im 25 years old and I live in Herzelia Israel. As a young
             kid I always had the passion for software developing and design. After the military
             service I started to learn deeply and more officiant about software development and now
             I'm ready and confident to take a step into the industry.
+          <a class="cv-btn" href="#">My CV</a>
+
           </p>
-          <img src="/assets/about-image.png" alt="about-image" />
+
+          <img class="about-img" src="/assets/about-image.png" alt="about-image" />
+        </div>
+        </div>
         </div>
       </div>
       <div class="right-side-contact-container">
@@ -148,8 +178,20 @@
               </a>
             </div>
           </div>
+          <div class="contact-icons-container">
+            <img src="/assets/contact-icons/contact-github.svg" alt="github" />
+            <img src="/assets/contact-icons/contact-linkedin.svg" alt="linkedin" />
+            <img src="/assets/contact-icons/contact-phone-icon.svg" alt="phone" />
+            <img src="/assets/contact-icons/contact-email.svg" alt="email" />
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="/scripts/main.js"></script>
   </body>
 </html>
