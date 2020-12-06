@@ -13,6 +13,12 @@
     <title>Amit's Portfolio</title>
   </head>
   <body>
+    <div class="burger-menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    
     <nav>
       <div class="logo-menu-container">
         <a href="#"><img src="assets/Logo.svg" alt="Logo" /></a>
@@ -24,12 +30,19 @@
       </div>
 
       <a class="contact-btn" href="#about-contact-section">Contact</a>
-      <div class="burger-menu">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    
     </nav>
+
+
+    <!-- Side Menu -->
+
+    <div class="side-menu closed">
+              <ul class="burger-links">
+        <li><a href="#my-projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#about-contact-section">ABOUT</a></li>
+      </ul>
+    </div>
 
     <main>
       <div class="left-side-container">
@@ -90,25 +103,37 @@
             </div>
           </div>
         </div>
-        <div class="project-card portfolio-card">
+        <div class="project-card prittier-card">
+          <div class="prettier-cover project-cover">
+            <div>
+              <h1>PRETTIER</h1>
+              <span>Make your tests prettier</span>
+            </div>
+          </div>
           <div class="project-content-container">
-            <h2>PORTFOLIO</h2>
+            <h2>PRETTIER</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit
-              expedita aliquam nobis blanditiis quibusdam.
+              Make your java console tests prettier, organized inside tables with just one annotation.
             </p>
+            <span class="tech-container">JAVA | REFLECTION API </span>
+
             <div class="btns-card-container">
               <img class="github-card-img" src="/assets/github-white-icon.svg" />
-              <img class="github-card-img" src="/assets/github-white-icon.svg" />
+              <img class="github-card-img" src="/assets/web-link.svg" />
             </div>
           </div>
         </div>
-        <div class="project-card prittier-card">
+        <div class="project-card portfolio-card">
+          <div class="soon-cover project-cover">
+            <div>
+              <h1>SOON</h1>
+              <span>More projects to come</span>
+            </div>
+          </div>
           <div class="project-content-container">
-            <h2>PRITTIER</h2>
+            <h2>COMING SOON</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit
-              expedita aliquam nobis blanditiis quibusdam.
+              More projects are coming soon make sure to stay tuned!
             </p>
             <img class="github-card-img" src="/assets/github-white-icon.svg" />
           </div>
@@ -179,10 +204,10 @@
             </div>
           </div>
           <div class="contact-icons-container">
-            <img src="/assets/contact-icons/contact-github.svg" alt="github" />
-            <img src="/assets/contact-icons/contact-linkedin.svg" alt="linkedin" />
-            <img src="/assets/contact-icons/contact-phone-icon.svg" alt="phone" />
-            <img src="/assets/contact-icons/contact-email.svg" alt="email" />
+            <img class="contact-icon" src="/assets/contact-icons/contact-github.svg" alt="github" />
+            <img class="contact-icon" src="/assets/contact-icons/contact-linkedin.svg" alt="linkedin" />
+            <img class="contact-icon" src="/assets/contact-icons/contact-phone-icon.svg" alt="phone" />
+            <img class="contact-icon" src="/assets/contact-icons/contact-email.svg" alt="email" />
           </div>
         </div>
       </div>

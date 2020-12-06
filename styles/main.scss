@@ -14,8 +14,62 @@ html {
 
 body {
   height: 100%;
-
   width: 100%;
+}
+
+.body-no-overflow {
+  overflow: hidden;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  width: 37px;
+  height: 100px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  div {
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Burger btn animation
+.toggle-btn .line1 {
+  background-color: white;
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle-btn .line2 {
+  opacity: 0;
+}
+.toggle-btn .line3 {
+  background-color: white;
+
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+//Burger links
+.burger-links {
+  margin-top: 10rem;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-links li a {
+  color: white;
+  font-size: 2.3rem;
+  outline: none;
 }
 
 a,
@@ -35,23 +89,9 @@ nav {
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.03);
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 100;
 }
 
-.burger-menu {
-  width: 37px;
-  height: 100px;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-
-  div {
-    background-color: #063441;
-    width: 100%;
-    height: 3px;
-    margin-bottom: 0.5rem;
-  }
-}
 nav div img {
   margin-right: 5rem;
   width: 60px;
@@ -99,6 +139,32 @@ li:hover {
   color: white;
 }
 
+.side-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  transition: all 0.7s ease-in-out;
+  background-color: #063441;
+}
+
+.close-burger-menu {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.closed {
+  transform: translate(+100%, 0);
+}
+
+.open {
+  transform: translate(0, 0);
+}
 main {
   background: rgb(255, 253, 251);
   background: linear-gradient(180deg, rgba(255, 253, 251, 1) 0%, rgba(232, 232, 232, 1) 100%);
@@ -238,6 +304,7 @@ main {
   background-color: #124653;
   border-radius: 50%;
   z-index: 1;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .b1 {
@@ -319,6 +386,7 @@ main {
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
     font-weight: 700;
+    color: black;
   }
 
   span {
@@ -326,12 +394,22 @@ main {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
+    color: black;
   }
 }
 
 .couponim-cover {
   background-image: url(/assets/projects-cover/couponim-cover.jpg);
 }
+
+.prettier-cover {
+  background-image: url(/assets/projects-cover/prettier-cover.jpg);
+}
+
+.soon-cover {
+  background-image: url(/assets/projects-cover/soon-cover.jpg);
+}
+
 .project-cover:hover {
   opacity: 0;
 }
