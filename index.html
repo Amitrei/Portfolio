@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Nunito:wght@400;700&family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/gif" sizes="32x32">
+
     <title>Amit's Portfolio</title>
   </head>
   <body>
@@ -41,6 +42,7 @@
         <li><a href="#my-projects">PROJECTS</a></li>
         <li><a href="#skills">SKILLS</a></li>
         <li><a href="#about-contact-section">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
 
@@ -65,9 +67,11 @@
         </div>
       </div>
       <div class="right-side-container">
-        <img class="main-img" src="assets/man.png" />
+      
+        <img class="main-img" src="assets/main-illust.svg" />
       </div>
       <div class="menu-spacer"></div>
+
 
     </main>
 
@@ -118,7 +122,7 @@
             <span class="tech-container">JAVA | REFLECTION API </span>
 
             <div class="btns-card-container">
-              <img class="github-card-img" src="/assets/github-white-icon.svg" />
+              <a href="http://www.github.com"><img class="github-card-img" src="/assets/github-white-icon.svg" /></a>
               <img class="github-card-img" src="/assets/web-link.svg" />
             </div>
           </div>
@@ -142,20 +146,42 @@
       <div id="skills" class="skills-container">
         <h2>Skills</h2>
         <div class="skills-icons-container">
-          <img class="skills-icon" src="/assets/skills-icons/java.svg" alt="java" />
-          <img class="skills-icon" src="/assets/skills-icons/spring.svg" alt="spring" />
-          <img class="skills-icon" src="/assets/skills-icons/mysql.svg" alt="mysql" />
-          <img class="skills-icon" src="/assets/skills-icons/html.svg" alt="html" />
-          <img class="skills-icon" src="/assets/skills-icons/javascript.svg" alt="javascript" />
-          <img class="skills-icon" src="/assets/skills-icons/angular.svg" alt="angular" />
-          <img class="skills-icon" src="/assets/skills-icons/css.svg" alt="css" />
-          <img class="skills-icon" src="/assets/skills-icons/illustrator.svg" alt="illustrator" />
-          <img class="skills-icon" src="/assets/skills-icons/xd.svg" alt="adobe xd" />
-          <img
-            class="skills-icon"
-            src="/assets/skills-icons/after-effects.svg"
-            alt="after effects"
-          />
+          <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/java.svg" alt="java" /><span>java</span>
+        </div>
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/spring.svg" alt="spring" /><span>spring</span>
+        </div>
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon mysql-icon" src="/assets/skills-icons/mysql.svg" alt="mysql" /><span>mysql</span>
+        </div>
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/javascript.svg" alt="javascript" /><span>javascript</span>
+        </div>
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/angular.svg" alt="angular" /><span>angular</span>
+        </div>
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/html.svg" alt="html" /><span>html</span>
+        </div>
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/css.svg" alt="css" /><span>css</span>
+        </div>
+     
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/ai.svg" alt="illustrator" /><span>illustrator</span>
+        </div>
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/ps.svg" alt="photoshop" /><span>photoshop</span>
+        </div>
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/xd.svg" alt="adobe xd" /><span>adobe xd</span>
+        </div>
+        <div class="skill-icon-wrapper">
+          <img class="skills-icon" src="/assets/skills-icons/ae.svg" alt="after effects" /><span>after effects</span>
+        </div>
+        
+     
         </div>
       </div>
     </section>
@@ -173,14 +199,14 @@
           <a class="cv-btn" href="#">My CV</a>
 
           </p>
-
-          <img class="about-img" src="/assets/about-image.png" alt="about-image" />
         </div>
+        <img src="/assets/hand-wave.png" class="hand-wave" alt="Hi there">
+
         </div>
         </div>
       </div>
       <div class="right-side-contact-container">
-        <div class="contact-container">
+        <div class="contact-container" id="contact">
           <h1>Contact Me</h1>
           <div class="contact-form">
             <div>

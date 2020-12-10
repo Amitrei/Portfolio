@@ -17,10 +17,6 @@ body {
   width: 100%;
 }
 
-.body-no-overflow {
-  overflow: hidden;
-}
-
 .burger-menu {
   position: fixed;
   top: 0;
@@ -169,27 +165,34 @@ main {
   background: rgb(255, 253, 251);
   background: linear-gradient(180deg, rgba(255, 253, 251, 1) 0%, rgba(232, 232, 232, 1) 100%);
   background-repeat: no-repeat;
-  padding: 0 4rem;
+  padding: 10rem 4rem 0 4rem;
   min-height: 100%;
   width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
 }
 
-.menu-spacer {
-  width: 100%;
-  height: 100px;
-}
-
 .right-side-container {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  justify-content: center;
   flex: 1 1 10rem;
 
   img {
     object-fit: cover;
+    width: 500px;
+    z-index: 10;
   }
+}
+
+.main-illust-decoration {
+  font-size: 1.5rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  color: #063441;
+  opacity: 0.4;
+  position: absolute;
 }
 
 .left-side-container {
@@ -410,11 +413,21 @@ main {
   background-image: url(/assets/projects-cover/soon-cover.jpg);
 }
 
-.project-cover:hover {
+.project-card:hover .project-cover {
   opacity: 0;
 }
 
+.project-card:hover .project-content-container {
+  z-index: 999;
+  opacity: 1;
+}
+// .project-cover:hover {
+//   opacity: 0;
+// }
+
 .project-content-container {
+  opacity: 0;
+  transition: opacity 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -477,11 +490,40 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.skill-icon-wrapper {
+  border: 1px solid #a0a0a034;
+  border-radius: 1rem;
+  margin: 2rem 2rem 0 0;
+  width: 80px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.137);
+  transition: box-shadow 0.8s ease-in-out;
+  pointer-events: none;
+  span {
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0.5rem;
+  }
 
   img {
-    margin-right: 2rem;
-    margin-top: 1.5rem;
-    opacity: 0.9;
+    object-fit: cover;
+    width: 25px;
+    opacity: 1;
+  }
+
+  .mysql-icon {
+    width: 50px;
   }
 }
 
@@ -543,8 +585,18 @@ main {
   }
 
   img {
+    position: absolute;
     object-fit: cover;
     margin-left: 2rem;
+    width: 80px;
+    top: -20px;
+    right: -20px;
+  }
+
+  @keyframes handWave {
+    to {
+      transform: rotate(10deg);
+    }
   }
 }
 
@@ -686,7 +738,7 @@ main {
     padding: 0;
   }
   .left-side-about-container {
-    padding: 5rem 0rem;
+    padding: 9rem 0rem;
   }
 
   .right-side-contact-container {
@@ -715,7 +767,8 @@ main {
   }
 
   .right-side-container {
-    justify-content: center;
+    justify-content: flex-end;
+    flex-direction: column;
     flex: 2 1 20rem;
     img {
       width: 300px;
@@ -723,7 +776,7 @@ main {
   }
 
   .left-side-container {
-    flex: 1 1 20rem;
+    flex: 3 1 20rem;
     padding-bottom: 2rem;
   }
 
@@ -762,6 +815,12 @@ main {
     }
     p {
       padding: 0 0 5rem 0;
+    }
+
+    img {
+      top: 0;
+      right: 20px;
+      width: 50px;
     }
   }
 
