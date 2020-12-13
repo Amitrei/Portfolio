@@ -9,11 +9,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="icon" href="/assets/favicon.ico" type="image/gif" sizes="32x32">
-
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/android-chrome-192x192.png" sizes="192x192">
     <title>Amit's Portfolio</title>
   </head>
   <body>
+
+    <div class="popup-msg">
+      <span class="popup-content">Copied to clipboard</span>
+    </div>
+    
     <div class="burger-menu">
       <div class="line1"></div>
       <div class="line2"></div>
@@ -51,8 +57,8 @@
         <div class="main-headline-container">
           <h1>Looking for a Fullstack developer?</h1>
           <p>
-            Hi I'm Amit a Fullstack developer and I'm ready to make <span>ideas</span> into
-            <span>reality</span>
+            Hi I'm Amit, a 25 years old <span>Fullstack Developer</span> from Israel Herzelia.
+
           </p>
 
           <div class="ctas-container">
@@ -102,8 +108,8 @@
 
             <span class="tech-container">JAVA | SPRING | ANGULAR</span>
             <div class="btns-card-container">
-              <img class="github-card-img" src="/assets/github-white-icon.svg" />
-              <img class="github-card-img" src="/assets/web-link.svg" />
+              <a href="http://github.com/amitrei/CouponSystemPhase2"><img class="github-card-img" src="/assets/github-white-icon.svg" /></a>
+              <a href="https://couponim-web.herokuapp.com/"><img class="github-card-img" src="/assets/web-link.svg" /></a>
             </div>
           </div>
         </div>
@@ -122,8 +128,8 @@
             <span class="tech-container">JAVA | REFLECTION API </span>
 
             <div class="btns-card-container">
-              <a href="http://www.github.com"><img class="github-card-img" src="/assets/github-white-icon.svg" /></a>
-              <img class="github-card-img" src="/assets/web-link.svg" />
+              <a href="http://www.github.com/amitrei/testprettier"><img class="github-card-img" src="/assets/github-white-icon.svg" /></a>
+              <a href="https://search.maven.org/artifact/com.github.amitrei/testPrettier/1.0.3/jar"><img class="github-card-img" src="/assets/web-link.svg" /></a>
             </div>
           </div>
         </div>
@@ -139,7 +145,7 @@
             <p>
               More projects are coming soon make sure to stay tuned!
             </p>
-            <img class="github-card-img" src="/assets/github-white-icon.svg" />
+            <a href="http://github.com/amitrei"><img class="github-card-img" src="/assets/github-white-icon.svg" /></a>
           </div>
         </div>
       </div>
@@ -192,11 +198,15 @@
           <h1>A little bit about me</h1>
           <div class="about-content-img">
           <p>
-            Hi I'm Amit, nice to meet you! Im 25 years old and I live in Herzelia Israel. As a young
-            kid I always had the passion for software developing and design. After the military
-            service I started to learn deeply and more officiant about software development and now
-            I'm ready and confident to take a step into the industry.
-          <a class="cv-btn" href="#">My CV</a>
+            Hi I'm Amit Reinich, a 25 years old Fullstack Developer from Israel Herzelia.
+            <span>Early Life</span>
+            As a young kid I always had the passion for solving problems, build and design my own stuff.
+            At the age of 15 I started to learn about software development and since then I knew that this is what ill be doing when I grow up.
+            Recently I graduated a FullStack bootcamp at JohnByrce training college. At The bootcamp I had a great time, i've learned a lot and improved my skills.
+            <span>Today</span>
+            Today I'm still learning new stuff each day and I’d be willing to take up employment in development , Back-end / Front-end or anything else,I'm always passionate and motivated to learn and experince new stuff.
+            If you are intersting in more details about me, feel free to check my GitHub account for projects / download my CV at the button below.
+          <a class="cv-btn" href="/assets/Amit-Reinich-CV.pdf">My CV</a>
 
           </p>
         </div>
@@ -209,31 +219,33 @@
         <div class="contact-container" id="contact">
           <h1>Contact Me</h1>
           <div class="contact-form">
-            <div>
+            <form class="contact-formspree" action="https://formspree.io/f/xaylpbqw" method="POST">
+              <div>
               <label for="form-name">Full Name</label>
-              <input type="text" id="form-name" class="form-name" />
+              <input type="text" id="form-name" name="name" class="form-name" />
             </div>
 
             <div>
               <label for="form-subject">Email</label>
-              <input type="text" id="form-subject" class="form-subject" />
+              <input type="text" id="form-email" name="email" class="form-email" />
             </div>
 
             <div class="message-form-container">
               <label for="form-content">Message</label>
-              <textarea id="form-content" class="form-content"></textarea>
-              <a href="#">
+              <textarea id="form-content" name="message" class="form-content"></textarea>
+              <a class="submit-btn" >
                 <div class="submit-form-btn">
                   <img src="/assets/submit-form-arrow.svg" alt="submit button" />
                 </div>
               </a>
             </div>
           </div>
+        </form>
           <div class="contact-icons-container">
-            <img class="contact-icon" src="/assets/contact-icons/contact-github.svg" alt="github" />
-            <img class="contact-icon" src="/assets/contact-icons/contact-linkedin.svg" alt="linkedin" />
-            <img class="contact-icon" src="/assets/contact-icons/contact-phone-icon.svg" alt="phone" />
-            <img class="contact-icon" src="/assets/contact-icons/contact-email.svg" alt="email" />
+            <a href="http://www.github.com/amitrei"><img class="contact-icon" src="/assets/contact-icons/contact-github.svg" alt="github" /></a>
+            <a href="https://www.linkedin.com/in/amit-reinich-bbb98b19b/"><img class="contact-icon" src="/assets/contact-icons/contact-linkedin.svg" alt="linkedin" /></a>
+            <a class="contact-phone"><img class="contact-icon" src="/assets/contact-icons/contact-phone-icon.svg" alt="phone" /></a>
+            <a class="contact-email"><img class="contact-icon contact-email" src="/assets/contact-icons/contact-email.svg" alt="email" /></a>
           </div>
         </div>
       </div>

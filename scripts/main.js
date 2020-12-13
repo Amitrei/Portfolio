@@ -102,7 +102,7 @@ gsap.from(".contact-icon", {
 
 gsap.from(".hand-wave", {
   scrollTrigger: {
-    trigger: ".contact-container",
+    trigger: ".about-contact-section",
   },
   opacity: 0,
   rotation: 20,
@@ -118,6 +118,8 @@ const couponimCard = document.querySelector(".couponim-card");
 const prettierCard = document.querySelector(".prittier-card");
 const projectCover = document.querySelectorAll(".project-card");
 const projectContent = document.querySelectorAll(".project-content-container");
+const contactForm = document.querySelector(".contact-formspree");
+const submitBtn = document.querySelector(".submit-btn");
 
 // Bubbles color animations
 soonCard.addEventListener("mouseover", () => changeBGColor("#57B268"));
@@ -149,3 +151,53 @@ burgerLinks.forEach((link) => {
     burgerMenuBtn.classList.toggle("toggle-btn");
   });
 });
+
+// Submit btn
+submitBtn.addEventListener("click", () => {
+  contactForm.submit();
+});
+
+// Contact Btns;
+const phoneBtn = document.querySelector(".contact-phone");
+const emailBtn = document.querySelector(".contact-email");
+const popupMsg = document.querySelector(".popup-msg");
+const popupContent = document.querySelector(".popup-content");
+
+phoneBtn.addEventListener("click", () => {
+  popupContent.innerHTML = "Phone number copied to clipboard";
+  copyToClipboard("0543361877");
+  popupMsg.classList.add("popup-animations");
+  setTimeout(() => {
+    popupMsg.classList.remove("popup-animations");
+  }, 5000);
+});
+
+emailBtn.addEventListener("click", () => {
+  popupContent.innerHTML = "Email address copied to clipboard";
+  copyToClipboard("amitreinich@gmail.com");
+  popupMsg.classList.add("popup-animations");
+  setTimeout(() => {
+    popupMsg.classList.remove("popup-animations");
+  }, 5000);
+});
+
+function copyToClipboard(text) {
+  if (navigator.clipboard) {
+    // default: modern asynchronous API
+    return navigator.clipboard.writeText(text);
+  } else if (window.clipboardData && window.clipboardData.setData) {
+    // for IE11
+    window.clipboardData.setData("Text", text);
+    return Promise.resolve();
+  } else {
+    // workaround: create dummy input
+    const input = h("input", { type: "text" });
+    input.value = text;
+    document.body.append(input);
+    input.focus();
+    input.select();
+    document.execCommand("copy");
+    input.remove();
+    return Promise.resolve();
+  }
+}
