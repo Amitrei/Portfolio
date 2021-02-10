@@ -534,6 +534,10 @@ main {
   .mysql-icon {
     width: 50px;
   }
+
+  .mongo-icon {
+    width: 50px;
+  }
 }
 
 .about-contact-section {
@@ -612,15 +616,14 @@ main {
 
 .about-content-img {
   display: flex;
-
-  p span {
-    font-weight: 700;
-    display: block;
-    margin: 2rem 0 0 0;
-    font-size: 2rem;
-  }
 }
 
+.para-headline {
+  font-weight: 700;
+  display: block;
+  margin: 2rem 0 0 0;
+  font-size: 2rem;
+}
 .cv-btn {
   display: block;
   width: 100px;
